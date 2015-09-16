@@ -3,9 +3,10 @@ body {
   margin: 0;
 }
 
+/* I set the left margin as a default margin. */
 .content {
   max-width: 500px;
-  margin: 0 auto;
+  margin-left: 10%;
 }
 
 
@@ -19,6 +20,7 @@ header {
   height: 25vw;
   max-height: 150px;
   width: 100%;
+  background-color: #f3eded;
 }
 
 .udacity-logo {
@@ -35,6 +37,12 @@ h1 {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }
+
+/* Style for the title of the page. */
+.my-title {
+  color: gray;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -71,17 +79,25 @@ h1 {
 
 /* MAIN SECTIONS */
 
+/* I added this class to overrides the default
+   margin with the alignment as centered. */
+.main-part {
+  margin: 0 auto;
+}
+
 .hero {
-  padding: 1em;
+  padding: 6em 0;
   max-width: 100%;
-  background-color: #294860;
+  background-color: #eca233;
   color: white;
+  text-align: center;
+  margin-bottom: 6em;
 }
 
 .my-picture {
   display: block;
   margin: 0 auto 10px;
-  width: 100%;
+  max-width: 100%;
   border: 2px solid white;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -94,6 +110,7 @@ h1 {
   letter-spacing: 0.05em;
   font-size: 20px;
   margin: 0;
+  font-style: italic;
 }
 
 .my-info {
@@ -108,8 +125,33 @@ h1 {
 
 .my-name {
   color: white;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-size: 70px;
+  margin: 0;
+}
+
+/* Styles only for the info about where I live. */
+.my-place {
+  color: gray;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 .about-me {
-  padding: 1em;
+  padding-left: 3em;
+  border-left-width: 3px;
+  border-left-color: #efeded;
+  border-left-style: solid;
+  max-width: 700px;
+  margin-bottom: 6em;
+}
+
+/* Styles only for the info at the bottom. */
+.about-me .my-info {
+  font-size: 30px;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
 }
